@@ -8,13 +8,12 @@
         $albuns = pegaAlbum();
         foreach ($albuns as $album){
             $infoAlbum = explode('/', $album);
-            $nomeAlbum = $infoAlbum[1]; 
-            var_dump(pegaImagem($nomeAlbum));
+            $nomeAlbum = $infoAlbum[1];
             $imgAlbum = "{$album}/{$nomeAlbum}.jpg";
     ?>
-        <div class="col-sm-3 card mb-3" style="width: 18rem;">
+        <div class="col-3 mb-3">
             <a href ="?page=Musicas&album=<?=$nomeAlbum?>">
-                <img src="<?=$imgAlbum?>" alt="<?=$nomeAlbum?>" class="img-album card-img-top" >
+                <img src="<?=$imgAlbum?>" alt="<?=$nomeAlbum?>" class="" >
                 <h4 class="card-title"><?=$nomeAlbum?> </h4>
             </a>
         </div>
