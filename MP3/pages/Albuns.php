@@ -9,10 +9,10 @@
             $nomeAlbum = $infoAlbum[1]; 
             $imgAlbum = "{$album}/{$nomeAlbum}.jpg";
     ?>
-    <div class="col-3 mb-3">
+    <div class="col-3 card mb-3" style="width: 17 rem;">
         <a href="?page=Musicas&album=<?=$nomeAlbum?>">
-            <img src="<?=$imgAlbum?>" alt="<?=$nomeAlbum?>" class="img-album">
-            <h4><?=$nomeAlbum?> </h4>
+            <img src="<?=$imgAlbum?>" alt="<?=$nomeAlbum?>" class="card-img mb-3">
+            <h4 class="card-title text-"><?=$nomeAlbum?> </h4>
         </a>
     </div>
     <?php
