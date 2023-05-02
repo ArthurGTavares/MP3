@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Formulário:</title>
+</head>
+<body>
+    <header class="mb-3"></header>
+    <div class="container">
+        <h3 class="mb-3">Formulário:</h3>
+        <form class="form" action="form.php" method="post">
+            <div class="mb-3">
+                <input type="text" name="nome" placeholder="Nome" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="email" name="email" placeholder="E-mail" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="password" name="senha" placeholder="Senha" class="form-control">
+            </div>
+            <div class="mb-3">
+                <select name="Estado" placeholder="Estado" class="form-select">
+                    <option value="">Escolha o estado</option>
+                    <option value="RN">Rio grande do Norte</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>   
+            </div>
+            <div class="mb-3">
+                <label class="form-check-label" for="genero">
+                    Gênero: 
+                </label>
+                <label class="form-check-label" for="genero">
+                    <input type="radio" name="genero" value="Masculino" class="form-check-input"> Masculino 
+                </label>
+                <label class="form-check-label" for="genero">
+                    <input type="radio" name="genero" value="Feminino" class="form-check-input"> Feminino 
+                </label>
+                <label class="form-check-label" for="genero">
+                    <input type="radio" name="genero" value="Outro" class="form-check-input"> Outro 
+                </label>
+            </div>
+            <div class="mb-3">
+                <textarea name="descricao" placeholder="Descrição" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" id="permissao" class="form-check-input" >
+                <label class="form-check-label">
+                    Quero receber notificações no meu E-mail sobre novidades
+                </label>
+            </div> 
+            <div>
+                <button type="submit" name="concordo" value="SIM" class="btn btn-success">Enviar</button> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
