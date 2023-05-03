@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="Style.css">
         <title>MP3</title>
     </head>
-    <body class="">
+    <body class="fundo">
         <div class="container">
             <?php
                 include_once 'Helpers.php';
