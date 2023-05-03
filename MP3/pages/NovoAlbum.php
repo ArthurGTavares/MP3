@@ -30,7 +30,7 @@
         if(move_uploaded_file($file['tmp_name'], $caminho.'/'.$novoNomeImagem)){
             header('Location: ?pages=Albuns');
         }else{
-            echo 'Não deu :c';
+           ?><h5 class="text-white"> Não deu :c</5><?php
         }
     }
 ?>

@@ -24,7 +24,7 @@
         if (move_uploaded_file($_FILES['musica']['tmp_name'], $caminho . $_FILES['musica']['name'])){
             header("Location: ?pages=Musicas&album={$album}");
         }else{
-            echo "vigi kkkk";
+            ?><h5 class="text-white">vigi kkkk<?php
         }
     }
 ?>
